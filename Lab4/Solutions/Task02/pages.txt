@@ -1,0 +1,5 @@
+comments.php - authenticated
+hiddenContent.php - authenticated - contains hidden message: "u found the hidden page! congrats!!!
+index.php - public
+login.php - public
+search.php - public

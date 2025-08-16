@@ -1,0 +1,18 @@
+services:
+    web-server:
+        build: ./sql-lab-server
+        image: sql-lab-server
+        container_name: www-10.9.0.90
+        tty: true
+        cap_add:
+                - ALL
+        networks:
+            net-10.9.0.0:
+                ipv4_address: 10.9.0.90
+
+networks:
+    net-10.9.0.0:
+        name: net-10.9.0.0
+        ipam:
+            config:
+                - subnet: 10.9.0.0/24
